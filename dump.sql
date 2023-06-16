@@ -25,6 +25,12 @@ SET time_zone = "+00:00";
 -- Banco de dados: `onlineshopping`
 --
 
+DROP DATABASE IF EXISTS onlineShopping;
+
+CREATE DATABASE onlineShopping;
+
+USE onlineShopping;
+
 -- --------------------------------------------------------
 
 --
@@ -856,8 +862,7 @@ ALTER TABLE `servicepoint`
 -- Índices para tabela `store`
 --
 ALTER TABLE `store`
-  ADD PRIMARY KEY (`sid`),
-  ADD KEY `customerGrade` (`customerGrade`);
+  ADD PRIMARY KEY (`sid`);
 
 --
 -- Índices para tabela `user`
@@ -1010,13 +1015,6 @@ ALTER TABLE `seller`
 --
 ALTER TABLE `servicepoint`
   ADD CONSTRAINT `fk_servicepoint_address` FOREIGN KEY (`addrid`) REFERENCES `address` (`addrid`) ON UPDATE CASCADE;
-
---
--- Limitadores para a tabela `store`
---
-ALTER TABLE `store`
-  ADD CONSTRAINT `store_ibfk_1` FOREIGN KEY (`customerGrade`) REFERENCES `product` (`pid`) ON UPDATE CASCADE;
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
