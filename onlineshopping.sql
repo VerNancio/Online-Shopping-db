@@ -1,3 +1,7 @@
+DROP DATABASE onlineshopping;
+CREATE DATABASE onlineshopping;
+USE onlineshopping;
+
 -- phpMyAdmin SQL Dump
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
@@ -45,7 +49,7 @@ CREATE TABLE `address` (
 INSERT INTO `address` (`addrid`, `userid`, `name`, `contactPhoneNumber`, `province`, `city`, `streetAdd`, `postalCode`) VALUES
 (1, 28, 'Haviva F. Davidson', '915-791-0670', 'Ontario', 'Ottawa-Carleton', '8484 Nonummy Av.', 'N0C 7E0'),
 (2, 21, 'Rae R. Lara', '495-472-7273', 'Ontario', 'St. Catharines', '5836 Iaculis Avenue', 'L7M 2V6'),
-(3, 36, 'Ashely O. Knowles', '895-493-8279', 'British Columbia', 'Hudson\'s Hope', 'P.O. Box 827, 1825 Fusce Ave', 'V7A 5A6'),
+(3, 36, 'Ashely O. Knowles', '895-493-8279', 'British Columbia', "Hudson\'s Hope", 'P.O. Box 827, 1825 Fusce Ave', 'V7A 5A6'),
 (4, 11, 'Hollee G. Hudson', '516-753-9880', 'Quebec', 'Baie-Comeau', '9376 Imperdiet Street', 'G4J 8Y2'),
 (5, 39, 'Kylynn G. Waller', '838-912-3476', 'Quebec', 'Neuville', 'Ap #179-5810 Nunc Rd.', 'G9K 8Y6'),
 (6, 38, 'Audra Manning', '898-140-2501', 'Manitoba', 'Daly', '732-9599 Lacinia Rd.', 'R1X 3Z2'),
